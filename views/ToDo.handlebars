@@ -1,0 +1,44 @@
+<div id="sidebar">SIDEBAR
+  <button type="button" class="btn btn-primary" id="create-todo-button" data-toggle="modal" data-target="#myModal"><i class='new-todo'>Create Todo</i></button>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Add Task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="todo-input-element">
+            <label for="todo-title-input">Title</label>
+            <input type="text" name="usertitle" id="todo-title-input">
+            <label for="todo-date-input">Date</label>
+            <input type="date" name="duedate" id="todo-date-input">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron next-to-side-bar">
+    <h1 class="display-4">Active Tasks</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+</div>
+
+<main class='todoContainer'> 
+    {{#each todos}}
+        {{>todo}}
+    {{/each}}
+</main>
+
+
+ 

@@ -1,0 +1,50 @@
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: #dadada;
+}
+
+header {
+    background-color: rgb(158, 4, 4);
+    color: white;
+    margin: 0;
+}
+
+.todoContainer {
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo-item {
+    flex: 0 1 28%;
+    display: flex;
+    margin: 2px;
+    padding: 20px;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+#sidebar { 
+    float: left; 
+    width: 150px; 
+    background-color: #ccc; 
+    border: 1px solid grey;
+    height: 100vh;
+    padding: 20px;
+}
+
+.jumbotron.next-to-side-bar{
+    position: relative;
+    left: 150px;
+}
+
+.todoContainer {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}

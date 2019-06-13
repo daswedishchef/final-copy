@@ -1,0 +1,31 @@
+{
+  "name": "CS290-Final-App",
+  "version": "1.0.0",
+  "description": "Web application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "handlebars views/partials/todo.handlebars -f public/todoTemplate.js",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp19/final-project-cs290-final-project-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp19/final-project-cs290-final-project-app/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp19/final-project-cs290-final-project-app#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.1.2",
+    "jquery": "^3.4.1",
+    "mongodb": "^3.2.7"
+  },
+  "devDependencies": {}
+}
